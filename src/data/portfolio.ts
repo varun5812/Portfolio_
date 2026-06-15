@@ -7,11 +7,11 @@ export const socialLinks = {
 };
 
 export const heroRoles = [
-  "Fresher Data Scientist",
+  "Data Scientist",
   "Machine Learning Engineer",
   "EDA & Analytics Specialist",
-  "Deep Learning Learner",
-  "Generative AI Explorer"
+  "Generative AI Developer",
+  "Deep Learning Practitioner"
 ];
 
 export const sectionMeta = [
@@ -27,14 +27,15 @@ export const sectionMeta = [
 export const stats = [
   { label: "Core Focus Areas", value: "05" },
   { label: "Projects Built", value: "04" },
-  { label: "Graduation Year", value: "2025" },
-  { label: "Internship Status", value: "Active" }
+  { label: "Years Experience", value: "02" },
+  { label: "InfyBytes AI Labs", value: "Active" }
 ];
 
 export const aboutHighlights = [
-  "B.E. graduate in Artificial Intelligence and Machine Learning (2025), ready to contribute as a fresher in data and AI roles.",
+  "Data Scientist at InfyBytes AI Labs Private Limited with 2 years of experience (combining 6-month internship and 1.6 years full-time).",
+  "B.E. graduate in Artificial Intelligence and Machine Learning (2025) with a strong academic foundation (CGPA 7.01).",
   "Hands-on with data preprocessing, EDA, feature engineering, model building, and evaluation using Python and SQL.",
-  "Currently extending into deep learning, RAG workflows, LLM applications, and deployment-focused AI projects."
+  "Deeply focused on deep learning, RAG workflows, LLM applications, and deployment-focused AI projects."
 ];
 
 export const focusAreas = [
@@ -68,7 +69,7 @@ export const focusAreas = [
 export const skills = [
   {
     category: "Data Foundation",
-    intro: "My strongest fresher value starts with reliable data handling: preprocess first, understand the data clearly, then build better models.",
+    intro: "My strongest engineering value starts with reliable data handling: preprocess first, understand the data clearly, then build better models.",
     items: [
       { name: "Python", level: 92 },
       { name: "SQL", level: 88 },
@@ -249,14 +250,15 @@ export const projects = [
 
 export const experience = [
   {
-    title: "Data Scientist Intern",
-    organization: "AIML LABS PVT LTD",
-    period: "April 2025 - Present",
-    summary: "Completed hands-on training in Data Science and Machine Learning with a focus on practical problem solving and model development.",
+    title: "Data Scientist",
+    organization: "InfyBytes AI Labs Private Limited",
+    period: "2024 - Present (2 Years)",
+    summary: "Began as a 6-month Data Scientist Intern during 7th semester of engineering and transitioned into a full-time Data Scientist role (1.6 years experience). Leads and builds data science models and RAG workflows.",
     bullets: [
-      "Worked on preprocessing, EDA, feature engineering, and model evaluation workflows.",
-      "Built classification-based machine learning projects with real-world problem framing.",
-      "Explored advanced concepts including Generative AI, RAG, LangChain, and vector databases."
+      "Designed end-to-end data preprocessing pipelines, exploratory data analysis, and feature engineering workflows.",
+      "Engineered and optimized predictive machine learning models using classification and regression algorithms.",
+      "Designed and implemented Generative AI application workflows, including RAG (Retrieval-Augmented Generation) systems and LLM applications using LangChain and vector databases.",
+      "Deployed predictive models as interactive Streamlit applications on cloud platforms like Render."
     ]
   }
 ];
@@ -305,18 +307,18 @@ export const timeline = [
     text: "Began the Artificial Intelligence and Machine Learning journey with a strong interest in data-led problem solving at SEA College, Bengaluru."
   },
   {
-    year: "2023",
-    title: "Core Data Engineering & SQL",
-    text: "Relational databases, advanced query writing, and built data visualizations in Power BI and Tableau."
-  },
-  {
     year: "2024",
-    title: "Applied Machine Learning & CNNs",
-    text: "Trained prediction models, classification systems, CNN structures, and completed model deployments."
+    title: "Data Scientist Intern (7th Sem)",
+    text: "Joined InfyBytes AI Labs Private Limited as an intern, designing data cleaning pipelines and exploration algorithms."
   },
   {
     year: "2025",
-    title: "Graduated & Internship Track",
-    text: "Graduated with a CGPA of 7.01. Joined AIML Labs as a Data Scientist Intern. Expanding expertise into LLMs, LangChain, and RAG systems."
+    title: "Graduated & Promoted to Full-time",
+    text: "Graduated with a CGPA of 7.01. Promoted to full-time Data Scientist at InfyBytes AI Labs, engineering predictive pipelines and ML endpoints."
+  },
+  {
+    year: "2026",
+    title: "Generative AI & LLM Systems",
+    text: "Working as a full-time Data Scientist (1.6 years) focusing on LangChain, RAG systems, and AI web applications."
   }
 ];

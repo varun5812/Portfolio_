@@ -18,7 +18,6 @@ export function Hero() {
   }, []);
 
   const headline = "Empowering Decision Systems With Rigorous Machine Learning";
-  const words = headline.split(" ");
 
   const scrollTo = (id: string) => {
     const element = document.getElementById(id);
@@ -40,7 +39,7 @@ export function Hero() {
             
             {/* Status Badge */}
             <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
+              initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5 }}
               className="inline-flex items-center gap-2 rounded-full border border-gold/30 bg-cream/40 px-3.5 py-1.5 text-[11px] font-bold uppercase tracking-wider text-charcoal/90 backdrop-blur-md shadow-sm"
@@ -49,32 +48,25 @@ export function Hero() {
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent opacity-75"></span>
                 <span className="relative inline-flex h-2 w-2 rounded-full bg-accent border border-cream"></span>
               </span>
-              2025 Graduate · Open for Data & AI Roles
+              Data Scientist @ InfyBytes AI Labs · 2 Years Experience
             </motion.div>
 
-            {/* Cinematic Title: Word by Word Reveal */}
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-[1.08] tracking-tight text-charcoal">
-              <span className="text-luxury-serif italic font-normal text-brown-muted block mb-1">
-                Konnichiwa, I am Varun Kumar H C
-              </span>
-              <span className="flex flex-wrap gap-x-2 sm:gap-x-3">
-                {words.map((word, i) => (
-                  <motion.span
-                    key={i}
-                    initial={{ opacity: 0, y: 15 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{
-                      duration: 0.5,
-                      delay: 0.1 + i * 0.08,
-                      ease: "easeOut",
-                    }}
-                    className="inline-block"
-                  >
-                    {word}
-                  </motion.span>
-                ))}
-              </span>
-            </h1>
+            {/* Headline and Name - Simpler, high-performance animation to resolve text hiding issues */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.15, ease: "easeOut" }}
+              className="space-y-3"
+            >
+              <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-[1.08] tracking-tight text-charcoal">
+                <span className="text-luxury-serif italic font-normal text-brown-muted block mb-1">
+                  Varun Kumar H C
+                </span>
+                <span className="text-gradient block">
+                  {headline}
+                </span>
+              </h1>
+            </motion.div>
 
             {/* Rotating Role */}
             <div className="flex items-center gap-2.5 min-h-[32px]">
@@ -99,7 +91,7 @@ export function Hero() {
             <motion.p
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.7, duration: 0.6 }}
+              transition={{ delay: 0.5, duration: 0.6 }}
               className="max-w-xl text-sm sm:text-base leading-relaxed text-brown-muted"
             >
               I bridge raw, noisy datasets with intelligent, deployment-ready prediction systems. 
@@ -110,7 +102,7 @@ export function Hero() {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.85, duration: 0.6 }}
+              transition={{ delay: 0.65, duration: 0.6 }}
               className="flex flex-wrap gap-4 pt-2"
             >
               <MagneticButton
@@ -140,7 +132,7 @@ export function Hero() {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 1, duration: 0.6 }}
+              transition={{ delay: 0.8, duration: 0.6 }}
               className="grid grid-cols-2 gap-4 sm:grid-cols-4 pt-6 md:pt-10 border-t border-gold/15"
             >
               {stats.map((s, idx) => (
@@ -162,7 +154,7 @@ export function Hero() {
           <motion.div
             initial={{ opacity: 0, rotate: 2, scale: 0.95 }}
             animate={{ opacity: 1, rotate: -1, scale: 1 }}
-            transition={{ delay: 0.4, duration: 0.9, ease: "easeOut" }}
+            transition={{ delay: 0.3, duration: 0.8, ease: "easeOut" }}
             className="relative justify-self-center lg:justify-self-end w-full max-w-[340px]"
           >
             {/* Ambient luxury backdrop glow */}
@@ -172,7 +164,7 @@ export function Hero() {
             <div className="glass-card-heavy p-4.5 rounded-[24px]">
               <div className="relative overflow-hidden rounded-[16px] border border-gold/30 aspect-square bg-[#f5efe5]">
                 <Image
-                  src="/images/hero_anime.png"
+                  src="/images/hero_workspace.png"
                   alt="Varun Kumar Workspace Illustration"
                   fill
                   sizes="(max-width: 768px) 100vw, 340px"
@@ -193,7 +185,7 @@ export function Hero() {
               <Sparkles size={10} className="text-gold" /> Data Science
             </div>
             <div className="absolute -bottom-2 -right-2 transform rotate-3 rounded-lg border border-gold/30 bg-cream/80 backdrop-blur-md px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-charcoal/90 shadow-sm">
-              AIML B.E.
+              InfyBytes AI Labs
             </div>
           </motion.div>
 
